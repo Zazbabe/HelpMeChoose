@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <title>Help Me Choose</title>
+        <link href="./main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <img src="choice.jpg" alt="Choice" height="242" width="542">
+        <h1>Help me choose between..</h1>
+        <div class="inputSection">
+            <div class="inputs">
+                <input placeholder="Something"></input>
+            </div>
+            <button class="addOption">Add</button>
+        </div>
+        <div class="resultSection"></div>
+        <button>GO!</button>
+
+        <script scr="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+        $(function() {
+            $('.resultSection').hide();
+
+            var addOption = function() {
+                $('.inputs').append('<input></inputs>');
+            }
+
+            $('.addOption').click(addOption);
+
+            var options = [];
+            console.log(options);
+        })
+        </script>
+    </body>
+</html>
